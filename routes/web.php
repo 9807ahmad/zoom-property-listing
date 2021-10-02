@@ -13,8 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // The root uri of application
-Route::get('/', 'TodoItemController@index')->name('showTodosPage');
-Route::get('/todos', 'TodoItemController@todos')->name('loadTodos');
-Route::post('/todos', 'TodoItemController@store')->name('storeTodos');
-Route::put('/todos/{todoItem}', 'TodoItemController@update')->name('updateTodo');
-Route::delete('/todos/{todoItem}', 'TodoItemController@destroy')->name('deleteTodo');
+Route::get('/', 'PropertyItemController@index')->name('showTodosPage');
+Route::get('/properties', 'PropertyItemController@properties')->name('properties');
+Route::post('/properties', 'PropertyItemController@store')->name('storeproperties');
+
